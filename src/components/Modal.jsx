@@ -25,7 +25,7 @@ const Modal = ({food}) => {
     <p className='text-md font-bold mt-4'>Alternative Names: </p>
     <div className='flex flex-col gap-1 '>{alternative_names.map((n, i) => <div key={i} className="badge badge-outline badge-info">{n}</div>)}</div>
     <p className="py-4">{cuisine}</p>
-    <p>Possible price in Dhaka: {Object.keys(possible_price_in_dhaka).map((p, ind) => <div key={ind} className="badge badge-soft badge-primary">{p}: {possible_price_in_dhaka[p]}</div> )}</p>
+    <p className='font-bold text-md'>Possible price in Dhaka:</p> {Object.keys(possible_price_in_dhaka).map((p, ind) => <div key={ind} className="badge badge-soft badge-primary">{p}: {possible_price_in_dhaka[p]}</div> )}
   </div>
   <form method="dialog" className="modal-backdrop">
     <button>close</button>
