@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🍰 Bake and Cook
 
-## Getting Started
+> A modern food ordering web application where users can browse, explore, and order delicious meals with ease.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📖 Description
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Bake and Cook** is a full-featured food ordering platform built with modern web technologies. The application provides users with a seamless experience to browse a wide variety of food items, view detailed information, explore recipes, and manage their cart — all within a clean and responsive interface.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Technologies Used
 
-## Learn More
+| Technology | Purpose |
+|---|---|
+| **JavaScript** | Core programming language |
+| **Next.js** | React-based framework for server-side rendering and routing |
+| **Tailwind CSS** | Utility-first CSS framework for styling |
+| **DaisyUI** | Tailwind CSS component library for UI elements |
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✨ Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🗂️ Food Listing Page
+- Displays all available food items on a single, organized page
+- Each food card includes:
+  - Food image
+  - Food name
+  - Price
 
-## Deploy on Vercel
+### 🔍 Food Details Modal
+- Clicking on a food item opens a **modal popup** with detailed information
+- Provides a rich view without leaving the current page
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 📋 Recipe Page
+- A dedicated **Recipe** button on each food card
+- Clicking it navigates the user to a **separate recipe page** with full cooking instructions for that item
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 🛒 Cart Functionality
+- Users can **add food items to their cart** directly from the listing page
+- Smooth and intuitive cart management experience
+
+### 📱 Responsive Design
+- Fully responsive layout that works seamlessly across desktop, tablet, and mobile devices
+
+---
+
+## 📝 Summary
+
+**Bake and Cook** is a well-structured food ordering application that combines the power of **Next.js** for efficient routing and rendering, **Tailwind CSS** for rapid and responsive styling, and **DaisyUI** for polished UI components. The app focuses on delivering a smooth user experience — from browsing food items and viewing details via modal dialogs, to exploring recipes on dedicated pages and managing a shopping cart. It serves as a solid foundation for a production-ready food delivery or restaurant ordering system.
+
+---
+
+> Built with ❤️ using Next.js, Tailwind CSS, and DaisyUI
