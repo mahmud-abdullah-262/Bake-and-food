@@ -2,14 +2,21 @@
 'use client'
 
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Modal from './Modal';
 import Link from 'next/link';
 import NoFood from './NoFood';
+import { useFoods } from '@/context/FoodContext';
+import { toast } from 'react-toastify';
 
 
 
-const Menu = ( {foods} )  => {
+const Menu =  ( {foods} )  => {
+  
+  const {foodData, addItem, item} = useFoods();
+  console.log("Card item:", item); 
+  
+
   const [showFood, setShowFood] = useState(foods);
   const [searchInp, setSearchInp] = useState('');
   const handleSearch = () => {
@@ -64,7 +71,7 @@ const Menu = ( {foods} )  => {
     <option value="burger">Burger</option>
     <option value="pizza">Pizza</option>
     <option value="dish">Dish</option>
-    <option value="Biriyani">Biriyani</option>
+    <option value="biriyani">Biriyani</option>
     <option value="beverage">beverage</option>
    </select>
       </div>
@@ -116,7 +123,13 @@ const Menu = ( {foods} )  => {
        <div className="btn btn-info btn-sm rounded-full ">Recipe</div>
       </Link>
      
-      <div className="btn btn-warning btn-sm rounded-full">Add to cart</div>
+      <div 
+      onClick={() =>
+        {addItem(food)
+         toast.success(`${dish_name} added to cart!`)
+        } } 
+      
+      className="btn btn-warning btn-sm rounded-full">Add to cart</div>
     </div>
   </div>
 </div>

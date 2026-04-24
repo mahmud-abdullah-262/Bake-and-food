@@ -3,11 +3,8 @@ import React from 'react';
 const Banner = () => {
   return (
     <div
-  className="hero min-h-[400px]"
-  style={{
-    backgroundImage:
-      "url(https://i.ibb.co.com/PJc3MzN/serghey-savchuk-Vu3-Air6-A1-Bw-unsplash.jpg)",
-  }}
+  className="hero min-h-100"
+  style={{ backgroundImage: "url(/banner.jpg)" }}
 >
   <div className="hero-overlay"></div>
   <div className="hero-content ">
