@@ -40,7 +40,7 @@ const Menu =  ( {foods} )  => {
   return (
     <div>
       <h1 className='text-center font-bold text-2xl my-6 text-[#b88527]'>Menu</h1>
-      <div className='w-11/12 mx-auto flex justify-center items-center gap-1 mb-6'>
+      <div className='w-11/12 mx-auto flex flex-col md:flex-row gap-2 justify-center items-center gap-1 mb-6'>
         <label className="input">
   <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <g
@@ -77,7 +77,7 @@ const Menu =  ( {foods} )  => {
       </div>
 
 
-      <div className='grid grid-cols-3 justify-items-center items-center gap-4 container mx-auto'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center items-center gap-4 w-11/12 mx-auto'>
        
       { showFood.length === 0 ? <NoFood></NoFood> : showFood.map(food => {
         const {id, dish_name, category, alternative_names, main_ingredients, approximate_nutrition_per_serving, rating, price, possible_price_in_dhaka, cuisine, origin_and_popularity, cooking_steps, image_link} = food
@@ -117,10 +117,10 @@ const Menu =  ( {foods} )  => {
     {category ?  <div className="badge badge-secondary">{category}</div> : '' }
    
     <p>{cuisine}</p> <p className='font-bold text-md'>price: {price}</p>
-    <div className="card-actions z-10">
+    <div className="card-actions justify-between z-10">
       <Modal food ={food}></Modal>
       <Link href={`foods/${id}`}>
-       <div className="btn btn-info btn-sm rounded-full ">Recipe</div>
+       <div className="btn btn-info btn-sm rounded-full px-6">Recipe</div>
       </Link>
      
       <div 
@@ -129,7 +129,7 @@ const Menu =  ( {foods} )  => {
          toast.success(`${dish_name} added to cart!`)
         } } 
       
-      className="btn btn-warning btn-sm rounded-full">Add to cart</div>
+      className="btn btn-warning btn-sm rounded-full px-6">Add to cart</div>
     </div>
   </div>
 </div>

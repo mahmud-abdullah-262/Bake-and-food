@@ -29,7 +29,7 @@ const Navber = () => {
          
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl font-black text-[#b88527]">Bake and Cook</a>
+          <a className="btn btn-ghost text-sm md:text-xl font-black text-[#b88527]">Bake and Cook</a>
         </div>
 
         <div className="navbar-center hidden lg:flex">
@@ -44,9 +44,9 @@ const Navber = () => {
         </div>
 
         {/* ✅ navbar-end এ ml-auto যোগ করা হয়েছে */}
-        <div className="navbar-end ml-auto flex items-center space-x-2">
-          <a className="btn bg-[#b88527] text-white">Login</a>
-          <a className="btn bg-[#b88527] text-white">Sign Up</a>
+        <div className="navbar-end ml-auto flex flex-col md:flex-row justify-end items-end md:items-center space-y-1 md:space-y-0 md:space-x-1">
+          <a className="btn btn-sm bg-[#b88527] text-white">Login</a>
+          <a className="btn btn-sm bg-[#b88527] text-white">Sign Up</a>
 
          
         </div>

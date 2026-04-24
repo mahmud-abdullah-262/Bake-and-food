@@ -6,6 +6,7 @@ import Banner from "@/components/Banner";
 import { DataProvider, FoodContext } from "@/context/FoodContext";
 import { ToastContainer } from "react-toastify";
 import ToastProvider from "@/components/TostProvider";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,6 +36,8 @@ export default function RootLayout({ children }) {
           <Navber></Navber>
         
            {children}
+
+          <Footer></Footer>
         </ToastProvider>
         </DataProvider>
         

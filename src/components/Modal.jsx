@@ -7,7 +7,7 @@ const Modal = ({food}) => {
   return (
     <div>
       {/* Open the modal using document.getElementById('ID').showModal() method */}
-<button className="btn btn-sm rounded-full" onClick={()=>document.getElementById('my_modal_2').showModal()}>Show Details</button>
+<button className="btn btn-sm rounded-full px-4" onClick={()=>document.getElementById('my_modal_2').showModal()}>Show Details</button>
 <dialog id="my_modal_2" className="modal">
   <div className="modal-box">
     <figure className='bg-gray-100 p-4 h-90 relative'>
